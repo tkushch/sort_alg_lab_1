@@ -182,7 +182,7 @@ class Schedule:
         дата отправления, время отправления, номер поезда, время в пути (по убыванию приоритета)
         """
         if not isinstance(other, (int, Schedule)):
-            raise TypeError("Операнд справа должен иметь тип Scedule")
+            raise TypeError("Операнд справа должен иметь тип Scedule ")
 
         temp = date_cmp(self.date, other.date)
         if temp < 0:
