@@ -1,6 +1,3 @@
-import random
-
-
 def insert_sort(arr):
     """!
     Функция сортировки массива 'Вставками'
@@ -16,7 +13,7 @@ def insert_sort(arr):
         arr[j] = temp
 
 
-def quick_sort(arr, start, end):
+def quick_sort(arr, start=0, end=-1):
     """!
     Функция сортировки массива методом 'QuickSort'
     @param arr: сортируемый список
@@ -24,6 +21,8 @@ def quick_sort(arr, start, end):
     @param end: индекс конца сортировки
     @return Ничего не возвращает
     """
+    if end == -1:
+        end = len(arr) - 1
     if end <= start:
         return
     pivot = arr[(start + end) // 2]
@@ -45,14 +44,51 @@ def quick_sort(arr, start, end):
     quick_sort(arr, left, end)
 
 
-def merge_sort(arr):
+def merge_sort(arr, start=0, end=-1):
     """!
     Функция сортировки массива методом слияния
     @param arr: сортируемый список
+    @param start: индекс начала сортировки
+    @param end: индекс конца сортировки
     @return Ничего не возвращает
     """
+    if end == -1:
+        end = len(arr) - 1
+    if end <= start:
+        return
+    mid = (start + end) // 2
+    merge_sort(arr, start, mid)
+    merge_sort(arr, mid + 1, end)
+    merge(arr, start, mid, end)
 
 
-a = [int(random.random() * 1000) for i in range(1000000)]
-quick_sort(a, 0, len(a) - 1)
-print(a == sorted(a))
+def merge(arr, start, mid, end):
+    """!
+    Функция слияния двух частей массива в одну для MergeSort
+    @param arr: сортируемый список
+    @param start: индекс начала
+    @param mid: индекс середины
+    @param end: индекс конца
+    @return Ничего не возвращает
+    """
+    b = []
+    i = start
+    j = mid + 1
+    while i <= mid and j <= end:
+        if arr[i] < arr[j]:
+            b.append(arr[i])
+            i += 1
+        else:
+            b.append(arr[j])
+            j += 1
+    if i > mid:
+        while j <= end:
+            b.append(arr[j])
+            j += 1
+    else:
+        while i <= mid:
+            b.append(arr[i])
+            i += 1
+
+    for i in range(start, end + 1):
+        arr[i] = b[i - start]

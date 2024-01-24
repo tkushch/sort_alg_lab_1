@@ -1,5 +1,7 @@
 from schedule import Schedule
-from algorithms import insert_sort
+from random import randint
+from algorithms import insert_sort, quick_sort, merge_sort
+
 
 def read_schedule(path='in.txt'):
     """!
@@ -33,7 +35,41 @@ def write_schedule(schedule_list, path='out.txt'):
     f.close()
 
 
-a = read_schedule('out.txt')
-insert_sort(a)
+def to_type(x):
+    if x % 3 == 0:
+        return 'пассажирский'
+    elif x % 3 == 1:
+        return 'скорый'
+    else:
+        return 'товарный'
+
+
+def to_need_len(s, n):
+    """!
+    Функция, дополняющая строку до нужной длины, добавлением нулей в начало
+    @param s: строка
+    @param n: необходимая длина
+    @return возвращает дополненную нулями строку
+    """
+    return '0' * (n - len(s)) + s
+
+
+def rand_schedule_data():
+    """!
+    Функция, возвращающая объект класса Schedule со случайными данными
+    """
+    return Schedule(randint(1, 1000),
+                    ':'.join(
+                        (to_need_len(str(randint(1, 30)), 2), to_need_len(str(randint(1, 12)), 2),
+                         str(randint(2000, 2023)))),
+                    to_type(randint(1, 100)),
+                    ':'.join((to_need_len(str(randint(0, 23)), 2), to_need_len(str(randint(0, 59)), 2),
+                              str(randint(10, 59)))),
+                    ':'.join((to_need_len(str(randint(0, 23)), 2), to_need_len(str(randint(0, 59)), 2),
+                              str(randint(10, 59)))))
+
+
+a = [rand_schedule_data() for i in range(1000)]
+quick_sort(a)
 for elem in a:
     print(elem)
