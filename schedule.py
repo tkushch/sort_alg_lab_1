@@ -47,7 +47,7 @@ class Schedule:
     Класс расписания поездов
     """
 
-    def __init__(self, num, date, typ, time, dur):
+    def __init__(self, num=0, date='00.00.0000', typ='-', time='00:00:00', dur='00:00:00'):
         """!
         Конструктор
 
@@ -213,3 +213,10 @@ class Schedule:
         дата отправления, время отправления, номер поезда, время в пути (по убыванию приоритета)
         """
         return not __eq__(self, other)
+
+    def __str__(self):
+        """!
+        Метод преобразования в строку
+        """
+        return ' '.join((str(self.num), self.date, self.typ, self.time, self.dur))
+
