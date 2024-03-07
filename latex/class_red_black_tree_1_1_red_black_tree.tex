@@ -1,0 +1,169 @@
+\doxysection{Класс Red\+Black\+Tree.\+Red\+Black\+Tree}
+\hypertarget{class_red_black_tree_1_1_red_black_tree}{}\label{class_red_black_tree_1_1_red_black_tree}\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+
+
+Класс красно-\/черного дерева Реализация структуры RB-\/дерева со всеми его свойствами  
+
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_ad42a1801f9dcf047a42ebd118d0b8609}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a6585a73a1e9c96e1cf8cc244adc88b24}{insert}} (self, key, value=None)
+\begin{DoxyCompactList}\small\item\em Добавление узла в дерево \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_ac2c3a4754b4fb3826759a7be30afc1c2}{get}} (self, key)
+\begin{DoxyCompactList}\small\item\em Метод получения списка значений по ключу \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a7159f50a02445b88d02a21405e0cb51e}{in\+\_\+order\+\_\+traversal}} (self, \mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a1a40c14b0197d3f0bdc5edc47ec5e4ab}{root}})
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a57b35141b9c73717b6ea26e6159c525a}{print\+\_\+binary\+\_\+tree}} (self, \mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a1a40c14b0197d3f0bdc5edc47ec5e4ab}{root}}, level=0, prefix="{}Root\+: "{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a3845c47318314c550933ac262fecbf04}{NIL}}
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a1a40c14b0197d3f0bdc5edc47ec5e4ab}{root}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a20e976dbb56dfe7f5e53ba8b3994ae53}{\+\_\+fix\+\_\+insert}} (self, node)
+\begin{DoxyCompactList}\small\item\em Балансировка дерева после вставки \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a8b93b4ec75ffc0f7837328300fb361ca}{\+\_\+left\+\_\+rotate}} (self, x, inverse=False)
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_ac399e6b96925aebdfb92b7431cb8c25b}{\+\_\+right\+\_\+rotate}} (self, y, inverse=False)
+\item 
+\mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_ad612ed511add3e257df7399b5b3c1ff2}{\+\_\+search\+\_\+nodes\+\_\+by\+\_\+key}} (self, \mbox{\hyperlink{class_red_black_tree_1_1_red_black_tree_a1a40c14b0197d3f0bdc5edc47ec5e4ab}{root}}, key, result)
+\begin{DoxyCompactList}\small\item\em Приватный рекурсивный метод поиска значений по ключу \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс красно-\/черного дерева Реализация структуры RB-\/дерева со всеми его свойствами 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_ad42a1801f9dcf047a42ebd118d0b8609}\label{class_red_black_tree_1_1_red_black_tree_ad42a1801f9dcf047a42ebd118d0b8609} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_a20e976dbb56dfe7f5e53ba8b3994ae53}\label{class_red_black_tree_1_1_red_black_tree_a20e976dbb56dfe7f5e53ba8b3994ae53} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!\_fix\_insert@{\_fix\_insert}}
+\index{\_fix\_insert@{\_fix\_insert}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_fix\_insert()}{\_fix\_insert()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+\_\+fix\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Балансировка дерева после вставки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em node} & проверяемый узел \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+\+: ничего не возвращает 
+\end{DoxyReturn}
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_a8b93b4ec75ffc0f7837328300fb361ca}\label{class_red_black_tree_1_1_red_black_tree_a8b93b4ec75ffc0f7837328300fb361ca} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!\_left\_rotate@{\_left\_rotate}}
+\index{\_left\_rotate@{\_left\_rotate}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_left\_rotate()}{\_left\_rotate()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+\_\+left\+\_\+rotate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{inverse = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_ac399e6b96925aebdfb92b7431cb8c25b}\label{class_red_black_tree_1_1_red_black_tree_ac399e6b96925aebdfb92b7431cb8c25b} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!\_right\_rotate@{\_right\_rotate}}
+\index{\_right\_rotate@{\_right\_rotate}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_right\_rotate()}{\_right\_rotate()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+\_\+right\+\_\+rotate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{y,  }\item[{}]{inverse = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_ad612ed511add3e257df7399b5b3c1ff2}\label{class_red_black_tree_1_1_red_black_tree_ad612ed511add3e257df7399b5b3c1ff2} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!\_search\_nodes\_by\_key@{\_search\_nodes\_by\_key}}
+\index{\_search\_nodes\_by\_key@{\_search\_nodes\_by\_key}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_search\_nodes\_by\_key()}{\_search\_nodes\_by\_key()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+\_\+search\+\_\+nodes\+\_\+by\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{key,  }\item[{}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Приватный рекурсивный метод поиска значений по ключу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em root} & корень дерева \\
+\hline
+{\em key} & ключ для поиска \\
+\hline
+{\em result} & список результатов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+\+: ничего не возвращает 
+\end{DoxyReturn}
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_ac2c3a4754b4fb3826759a7be30afc1c2}\label{class_red_black_tree_1_1_red_black_tree_ac2c3a4754b4fb3826759a7be30afc1c2} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!get@{get}}
+\index{get@{get}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+
+
+Метод получения списка значений по ключу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & ключ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_a7159f50a02445b88d02a21405e0cb51e}\label{class_red_black_tree_1_1_red_black_tree_a7159f50a02445b88d02a21405e0cb51e} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!in\_order\_traversal@{in\_order\_traversal}}
+\index{in\_order\_traversal@{in\_order\_traversal}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{in\_order\_traversal()}{in\_order\_traversal()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+in\+\_\+order\+\_\+traversal (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root }\end{DoxyParamCaption})}
+
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_a6585a73a1e9c96e1cf8cc244adc88b24}\label{class_red_black_tree_1_1_red_black_tree_a6585a73a1e9c96e1cf8cc244adc88b24} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!insert@{insert}}
+\index{insert@{insert}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+insert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Добавление узла в дерево 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & -\/ ключ узла \\
+\hline
+{\em value} & -\/ значение узла \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_a57b35141b9c73717b6ea26e6159c525a}\label{class_red_black_tree_1_1_red_black_tree_a57b35141b9c73717b6ea26e6159c525a} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!print\_binary\_tree@{print\_binary\_tree}}
+\index{print\_binary\_tree@{print\_binary\_tree}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{print\_binary\_tree()}{print\_binary\_tree()}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+print\+\_\+binary\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{level = {\ttfamily 0},  }\item[{}]{prefix = {\ttfamily "{}Root\+:~"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_a3845c47318314c550933ac262fecbf04}\label{class_red_black_tree_1_1_red_black_tree_a3845c47318314c550933ac262fecbf04} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!NIL@{NIL}}
+\index{NIL@{NIL}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{NIL}{NIL}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+NIL}
+
+\Hypertarget{class_red_black_tree_1_1_red_black_tree_a1a40c14b0197d3f0bdc5edc47ec5e4ab}\label{class_red_black_tree_1_1_red_black_tree_a1a40c14b0197d3f0bdc5edc47ec5e4ab} 
+\index{RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}!root@{root}}
+\index{root@{root}!RedBlackTree.RedBlackTree@{RedBlackTree.RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily Red\+Black\+Tree.\+Red\+Black\+Tree.\+root}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_red_black_tree_8py}{Red\+Black\+Tree.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\doxysection{Пространство имен main}
+\hypertarget{namespacemain}{}\label{namespacemain}\index{main@{main}}
+
+
+\doxylink{main_8py}{main.\+py}  
+
+
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemain_ada1cdb4367381605cad6d0d034b4da9f}{read\+\_\+schedule}} (path, n)
+\begin{DoxyCompactList}\small\item\em Функция для чтения расписания из текстового файла (разделитель -\/ пробел) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a4682ca274cd603ab886594670fe39c4e}{write\+\_\+schedule}} (schedule\+\_\+list, path)
+\begin{DoxyCompactList}\small\item\em Функция для записи расписания в текстовый файл (разделитель -\/ пробел) из списка с объектами класса Schedule. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a59705246ecfad46fefece8d1bab2f6e3}{to\+\_\+type}} (x)
+\begin{DoxyCompactList}\small\item\em Функция преобразования числа в тип поезда в зависимости от его остатка на 3 (для случайной генерации данных) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_af4b9210e4524767e9bd08f09dd344781}{to\+\_\+need\+\_\+len}} (s, n)
+\begin{DoxyCompactList}\small\item\em Функция, дополняющая строку до нужной длины, добавлением нулей в начало \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a015ba07251b150e1cc1bd93e006a41d3}{rand\+\_\+schedule\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Функция, возвращающая объект класса Schedule со случайными данными \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacemain_aa164244f9ef98d3941710f56dae766dc}{a}} = \mbox{[}\mbox{\hyperlink{namespacemain_a015ba07251b150e1cc1bd93e006a41d3}{rand\+\_\+schedule\+\_\+data}}() for i in range(150000)\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+\doxylink{main_8py}{main.\+py} 
+
+Файл для проведения замеров времени сортировки разных данных алгоритмами из \doxylink{algorithms_8py}{algorithms.\+py} 
+
+\doxysubsection{Функции}
+\Hypertarget{namespacemain_a015ba07251b150e1cc1bd93e006a41d3}\label{namespacemain_a015ba07251b150e1cc1bd93e006a41d3} 
+\index{main@{main}!rand\_schedule\_data@{rand\_schedule\_data}}
+\index{rand\_schedule\_data@{rand\_schedule\_data}!main@{main}}
+\doxysubsubsection{\texorpdfstring{rand\_schedule\_data()}{rand\_schedule\_data()}}
+{\footnotesize\ttfamily main.\+rand\+\_\+schedule\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция, возвращающая объект класса Schedule со случайными данными 
+
+\Hypertarget{namespacemain_ada1cdb4367381605cad6d0d034b4da9f}\label{namespacemain_ada1cdb4367381605cad6d0d034b4da9f} 
+\index{main@{main}!read\_schedule@{read\_schedule}}
+\index{read\_schedule@{read\_schedule}!main@{main}}
+\doxysubsubsection{\texorpdfstring{read\_schedule()}{read\_schedule()}}
+{\footnotesize\ttfamily main.\+read\+\_\+schedule (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+
+
+Функция для чтения расписания из текстового файла (разделитель -\/ пробел) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em n} & количество строк, которое должно быть прочитано \\
+\hline
+{\em path} & путь к текстовому файлу с расписанием (разделитель -\/ пробел) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+список с объектами класса Schedule 
+\end{DoxyReturn}
+\Hypertarget{namespacemain_af4b9210e4524767e9bd08f09dd344781}\label{namespacemain_af4b9210e4524767e9bd08f09dd344781} 
+\index{main@{main}!to\_need\_len@{to\_need\_len}}
+\index{to\_need\_len@{to\_need\_len}!main@{main}}
+\doxysubsubsection{\texorpdfstring{to\_need\_len()}{to\_need\_len()}}
+{\footnotesize\ttfamily main.\+to\+\_\+need\+\_\+len (\begin{DoxyParamCaption}\item[{}]{s,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+
+
+Функция, дополняющая строку до нужной длины, добавлением нулей в начало 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & строка \\
+\hline
+{\em n} & необходимая длина \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+возвращает дополненную нулями строку 
+\end{DoxyReturn}
+\Hypertarget{namespacemain_a59705246ecfad46fefece8d1bab2f6e3}\label{namespacemain_a59705246ecfad46fefece8d1bab2f6e3} 
+\index{main@{main}!to\_type@{to\_type}}
+\index{to\_type@{to\_type}!main@{main}}
+\doxysubsubsection{\texorpdfstring{to\_type()}{to\_type()}}
+{\footnotesize\ttfamily main.\+to\+\_\+type (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Функция преобразования числа в тип поезда в зависимости от его остатка на 3 (для случайной генерации данных) 
+
+\Hypertarget{namespacemain_a4682ca274cd603ab886594670fe39c4e}\label{namespacemain_a4682ca274cd603ab886594670fe39c4e} 
+\index{main@{main}!write\_schedule@{write\_schedule}}
+\index{write\_schedule@{write\_schedule}!main@{main}}
+\doxysubsubsection{\texorpdfstring{write\_schedule()}{write\_schedule()}}
+{\footnotesize\ttfamily main.\+write\+\_\+schedule (\begin{DoxyParamCaption}\item[{}]{schedule\+\_\+list,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Функция для записи расписания в текстовый файл (разделитель -\/ пробел) из списка с объектами класса Schedule. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em schedule\+\_\+list} & список с объектами Schedule, из которого надо записать данные в файл \\
+\hline
+{\em path} & путь к файлу \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Переменные}
+\Hypertarget{namespacemain_aa164244f9ef98d3941710f56dae766dc}\label{namespacemain_aa164244f9ef98d3941710f56dae766dc} 
+\index{main@{main}!a@{a}}
+\index{a@{a}!main@{main}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily list main.\+a = \mbox{[}\mbox{\hyperlink{namespacemain_a015ba07251b150e1cc1bd93e006a41d3}{rand\+\_\+schedule\+\_\+data}}() for i in range(150000)\mbox{]}}
+

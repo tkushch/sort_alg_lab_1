@@ -1,0 +1,138 @@
+\begin{theindex}
+
+  \item {\_\_eq\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{18}
+  \item {\_\_ge\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{18}
+  \item {\_\_gt\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{18}
+  \item {\_\_init\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{18}
+  \item {\_\_le\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{19}
+  \item {\_\_lt\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{19}
+  \item {\_\_ne\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{19}
+  \item {\_\_str\_\_}
+    \subitem {schedule.Schedule}, \hyperpage{19}
+
+  \indexspace
+
+  \item {algorithms}, \hyperpage{9}
+    \subitem {insert\_sort}, \hyperpage{9}
+    \subitem {merge}, \hyperpage{10}
+    \subitem {merge\_sort}, \hyperpage{10}
+    \subitem {quick\_sort}, \hyperpage{10}
+  \item {algorithms.py}, \hyperpage{21}
+
+  \indexspace
+
+  \item {date}
+    \subitem {schedule.Schedule}, \hyperpage{20}
+  \item {date\_cmp}
+    \subitem {schedule}, \hyperpage{14}
+  \item {dur}
+    \subitem {schedule.Schedule}, \hyperpage{20}
+
+  \indexspace
+
+  \item {figsize}
+    \subitem {main}, \hyperpage{13}
+
+  \indexspace
+
+  \item {insert}
+    \subitem {main}, \hyperpage{13}
+  \item {insert\_sort}
+    \subitem {algorithms}, \hyperpage{9}
+
+  \indexspace
+
+  \item {label}
+    \subitem {main}, \hyperpage{13}
+
+  \indexspace
+
+  \item {main}, \hyperpage{11}
+    \subitem {figsize}, \hyperpage{13}
+    \subitem {insert}, \hyperpage{13}
+    \subitem {label}, \hyperpage{13}
+    \subitem {merge}, \hyperpage{13}
+    \subitem {quick}, \hyperpage{13}
+    \subitem {rand\_schedule\_data}, \hyperpage{12}
+    \subitem {read\_schedule}, \hyperpage{12}
+    \subitem {sizes}, \hyperpage{14}
+    \subitem {to\_need\_len}, \hyperpage{12}
+    \subitem {to\_type}, \hyperpage{12}
+    \subitem {write\_schedule}, \hyperpage{13}
+  \item {main.py}, \hyperpage{21}
+  \item {merge}
+    \subitem {algorithms}, \hyperpage{10}
+    \subitem {main}, \hyperpage{13}
+  \item {merge\_sort}
+    \subitem {algorithms}, \hyperpage{10}
+
+  \indexspace
+
+  \item {num}
+    \subitem {schedule.Schedule}, \hyperpage{20}
+
+  \indexspace
+
+  \item {quick}
+    \subitem {main}, \hyperpage{13}
+  \item {quick\_sort}
+    \subitem {algorithms}, \hyperpage{10}
+
+  \indexspace
+
+  \item {rand\_schedule\_data}
+    \subitem {main}, \hyperpage{12}
+  \item {read\_schedule}
+    \subitem {main}, \hyperpage{12}
+  \item {README}, \hyperpage{1}
+  \item {README.md}, \hyperpage{22}
+
+  \indexspace
+
+  \item {schedule}, \hyperpage{14}
+    \subitem {date\_cmp}, \hyperpage{14}
+    \subitem {time\_cmp}, \hyperpage{15}
+  \item {schedule.py}, \hyperpage{22}
+  \item {schedule.Schedule}, \hyperpage{17}
+    \subitem {\_\_eq\_\_}, \hyperpage{18}
+    \subitem {\_\_ge\_\_}, \hyperpage{18}
+    \subitem {\_\_gt\_\_}, \hyperpage{18}
+    \subitem {\_\_init\_\_}, \hyperpage{18}
+    \subitem {\_\_le\_\_}, \hyperpage{19}
+    \subitem {\_\_lt\_\_}, \hyperpage{19}
+    \subitem {\_\_ne\_\_}, \hyperpage{19}
+    \subitem {\_\_str\_\_}, \hyperpage{19}
+    \subitem {date}, \hyperpage{20}
+    \subitem {dur}, \hyperpage{20}
+    \subitem {num}, \hyperpage{20}
+    \subitem {time}, \hyperpage{20}
+    \subitem {typ}, \hyperpage{20}
+  \item {sizes}
+    \subitem {main}, \hyperpage{14}
+
+  \indexspace
+
+  \item {time}
+    \subitem {schedule.Schedule}, \hyperpage{20}
+  \item {time\_cmp}
+    \subitem {schedule}, \hyperpage{15}
+  \item {to\_need\_len}
+    \subitem {main}, \hyperpage{12}
+  \item {to\_type}
+    \subitem {main}, \hyperpage{12}
+  \item {typ}
+    \subitem {schedule.Schedule}, \hyperpage{20}
+
+  \indexspace
+
+  \item {write\_schedule}
+    \subitem {main}, \hyperpage{13}
+
+\end{theindex}

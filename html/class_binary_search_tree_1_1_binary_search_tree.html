@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Отчет к лабораторной работе 2: Класс BinarySearchTree.BinarySearchTree</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Отчет к лабораторной работе 2
+   </div>
+   <div id="projectbrief">Кущ Тимофей СКБ212</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_binary_search_tree.html">BinarySearchTree</a></li><li class="navelem"><a class="el" href="class_binary_search_tree_1_1_binary_search_tree.html">BinarySearchTree</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="class_binary_search_tree_1_1_binary_search_tree-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс BinarySearchTree.BinarySearchTree</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс Бинарного дерева поиска содержит конструктор, метода вставки  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a23677e03efa62909ab196df5a71023d5" id="r_a23677e03efa62909ab196df5a71023d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23677e03efa62909ab196df5a71023d5">__init__</a> (self)</td></tr>
+<tr class="separator:a23677e03efa62909ab196df5a71023d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f460e382e9558b4081fd5d699b9444" id="r_ab6f460e382e9558b4081fd5d699b9444"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6f460e382e9558b4081fd5d699b9444">insert</a> (self, key, value=None)</td></tr>
+<tr class="separator:ab6f460e382e9558b4081fd5d699b9444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5faee3b097730014a18a98574d7221" id="r_a5c5faee3b097730014a18a98574d7221"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5faee3b097730014a18a98574d7221">in_order_traversal</a> (self, <a class="el" href="#a4aa0ee481a5c399dc220c4c2284c7884">root</a>)</td></tr>
+<tr class="separator:a5c5faee3b097730014a18a98574d7221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e4b0a5ea1ec3f389bd3f1430e5554d" id="r_a78e4b0a5ea1ec3f389bd3f1430e5554d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78e4b0a5ea1ec3f389bd3f1430e5554d">get</a> (self, key)</td></tr>
+<tr class="memdesc:a78e4b0a5ea1ec3f389bd3f1430e5554d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод получения списка значений по ключу  <br /></td></tr>
+<tr class="separator:a78e4b0a5ea1ec3f389bd3f1430e5554d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e3592f927f79ff0700337cf4503784" id="r_a02e3592f927f79ff0700337cf4503784"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02e3592f927f79ff0700337cf4503784">print_binary_tree</a> (self, <a class="el" href="#a4aa0ee481a5c399dc220c4c2284c7884">root</a>, level=0, prefix=&quot;Root: &quot;)</td></tr>
+<tr class="separator:a02e3592f927f79ff0700337cf4503784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a4aa0ee481a5c399dc220c4c2284c7884" id="r_a4aa0ee481a5c399dc220c4c2284c7884"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aa0ee481a5c399dc220c4c2284c7884">root</a></td></tr>
+<tr class="separator:a4aa0ee481a5c399dc220c4c2284c7884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:ac9c6868acbc640538623640ac5ba859f" id="r_ac9c6868acbc640538623640ac5ba859f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9c6868acbc640538623640ac5ba859f">_insert</a> (self, <a class="el" href="#a4aa0ee481a5c399dc220c4c2284c7884">root</a>, key, value)</td></tr>
+<tr class="separator:ac9c6868acbc640538623640ac5ba859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad693859bc0f102aee164b43ca52677fb" id="r_ad693859bc0f102aee164b43ca52677fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad693859bc0f102aee164b43ca52677fb">_search_nodes_by_key</a> (self, <a class="el" href="#a4aa0ee481a5c399dc220c4c2284c7884">root</a>, key, result)</td></tr>
+<tr class="memdesc:ad693859bc0f102aee164b43ca52677fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приватный рекурсивный метод поиска значений по ключу  <br /></td></tr>
+<tr class="separator:ad693859bc0f102aee164b43ca52677fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс Бинарного дерева поиска содержит конструктор, метода вставки </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a23677e03efa62909ab196df5a71023d5" name="a23677e03efa62909ab196df5a71023d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23677e03efa62909ab196df5a71023d5">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ac9c6868acbc640538623640ac5ba859f" name="ac9c6868acbc640538623640ac5ba859f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c6868acbc640538623640ac5ba859f">&#9670;&#160;</a></span>_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree._insert </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad693859bc0f102aee164b43ca52677fb" name="ad693859bc0f102aee164b43ca52677fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad693859bc0f102aee164b43ca52677fb">&#9670;&#160;</a></span>_search_nodes_by_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree._search_nodes_by_key </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Приватный рекурсивный метод поиска значений по ключу </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>корень дерева </td></tr>
+    <tr><td class="paramname">key</td><td>ключ для поиска </td></tr>
+    <tr><td class="paramname">result</td><td>список результатов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>: ничего не возвращает </dd></dl>
+
+</div>
+</div>
+<a id="a78e4b0a5ea1ec3f389bd3f1430e5554d" name="a78e4b0a5ea1ec3f389bd3f1430e5554d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e4b0a5ea1ec3f389bd3f1430e5554d">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree.get </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод получения списка значений по ключу </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ключ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c5faee3b097730014a18a98574d7221" name="a5c5faee3b097730014a18a98574d7221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5faee3b097730014a18a98574d7221">&#9670;&#160;</a></span>in_order_traversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree.in_order_traversal </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>root</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6f460e382e9558b4081fd5d699b9444" name="ab6f460e382e9558b4081fd5d699b9444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f460e382e9558b4081fd5d699b9444">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree.insert </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02e3592f927f79ff0700337cf4503784" name="a02e3592f927f79ff0700337cf4503784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e3592f927f79ff0700337cf4503784">&#9670;&#160;</a></span>print_binary_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree.print_binary_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>level</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>prefix</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Root:&#160;&quot;</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a4aa0ee481a5c399dc220c4c2284c7884" name="a4aa0ee481a5c399dc220c4c2284c7884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa0ee481a5c399dc220c4c2284c7884">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinarySearchTree.BinarySearchTree.root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="_binary_search_tree_8py.html">BinarySearchTree.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
