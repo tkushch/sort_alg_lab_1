@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['num_0',['num',['../classschedule_1_1_schedule.html#abcd8372083f3e73c809f7ee933a1a631',1,'schedule::Schedule']]]
+  ['figsize_0',['figsize',['../namespacemain___lab2.html#a09897770834af4de9788836e5c0c0afa',1,'main_Lab2']]]
 ];
